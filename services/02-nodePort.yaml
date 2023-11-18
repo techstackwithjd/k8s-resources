@@ -30,7 +30,7 @@ spec:
   ports:
   - name: nginx-lb
     targetPort: nginx-port
-    NodePort: 30007
+    nodePort: 30007
     port: 80
 
 
