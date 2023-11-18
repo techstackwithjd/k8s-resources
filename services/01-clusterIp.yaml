@@ -1,0 +1,39 @@
+apiVersion: v1
+kind: Pod
+metadata: 
+  name: nginx
+  labels:
+    environment: dev
+    app: frontend
+spec: 
+  containers:
+    - name: nginx
+      image: nginx
+      ports:
+        - name: nginx-clusterIpService
+          containerPort: 80
+          protocol: TCP
+
+---
+
+apiVersion: v1
+kind: Service
+metadata:
+  name: nginx-service
+spec:
+  ports:
+    - name: name-of-the-service-port
+      port: 80
+      targetPort: 80
+      protocol: TCP
+  selector:
+    environment: dev
+    app: frontend
+    
+
+
+  
+    
+
+      
+    
