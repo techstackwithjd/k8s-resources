@@ -23,7 +23,7 @@ spec:
   type: LoadBalancer
   selector:
     app: nginx
-    environemnt: dev
+    environment: dev
   ports: 
   - name: service-lb
     port: 80
