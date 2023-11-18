@@ -27,7 +27,7 @@ spec:
   ports: 
   - name: service-lb
     port: 80
-    targetPort: nginx-lb
+    targetPort: 80
     protocol: TCP
 
       
