@@ -10,7 +10,7 @@ spec:
     - name: nginx
       image: nginx
       ports:
-        - name: nginx-clusterip-service
+        - name: nginx-service
           containerPort: 80
           protocol: TCP
 
