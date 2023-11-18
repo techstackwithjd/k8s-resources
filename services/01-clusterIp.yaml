@@ -22,7 +22,7 @@ metadata:
   name: nginx-service
 spec:
   ports:
-    - name: name-of-the-service-port
+    - name: name-of-the-service
       port: 80
       targetPort: 80
       protocol: TCP
