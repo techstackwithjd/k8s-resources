@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Service
+metadat:
+   name: nginx-service
+spec: 
+  type: NodePort
+  selector:
+    app: nginx
+    version: 1.0.0
+    tier: front
+  ports:
+    - name: nginx-port
+      targetPort: 80
+      port: 80
+      nodePort: 30007
