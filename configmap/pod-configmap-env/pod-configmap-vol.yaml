@@ -32,7 +32,7 @@ spec:
       name: pod-configmap-vol
       items:
       - key: "game.properties"
-        path: "game.properties"
+        path: "a.properties"
       - key: "user-interface.properties"
-        path: "user-interface.properties"
+        path: "b.properties"
 
