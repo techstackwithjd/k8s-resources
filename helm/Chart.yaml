@@ -3,4 +3,4 @@ name: this is testing chart
 version: 1.0.0
 kubeVersion: 1.27
 description: this is for testing helm chart
-type: private
+type: application
