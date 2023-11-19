@@ -23,7 +23,7 @@ spec:
       command: ["sleep", "3600"]
       volumeMounts:
       - name: pod-configmap-vol 
-        mountPath: "/config"
+        mountPath: "/config/"
         subPath: game.properties
         readOnly: true
 
