@@ -1,0 +1,29 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: pod-configmap-env
+data:
+  player1: kholi
+  Player2: Dhoni
+
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: pod-configmap-env
+spec:
+  containers:
+    - name: cricketplayers
+      image: alpine
+      command: ["sleep", "3600"]
+      env:
+        - name: PLAYER1
+          valueFrom:
+            configMapKeyRef:
+              name: pod-configmap-env
+              key: player1
+        - name: PLAYER2
+          valueFrom:
+            configMapKeyRef:
+              name: pod-configmap-env
+              key: Player2
